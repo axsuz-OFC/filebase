@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filebase — AXsUZ-OFC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- BACKGROUND IMAGES -->
+  <div class="bg-gallery" id="bgGallery">
+    <div class="bg-layer active" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1920&auto=format&fit=crop');"></div>
+    <div class="bg-layer" style="background-image: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1920&auto=format&fit=crop');"></div>
+    <div class="bg-layer" style="background-image: url('https://images.unsplash.com/photo-1557672172-298e090bd0f1?q=80&w=1920&auto=format&fit=crop');"></div>
+  </div>
+
+  <!-- LOADING SCREEN -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <h1 class="loader-title">FILEBASE</h1>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <span class="loader-pct" id="loaderPct">0%</span>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <span class="logo">FILEBASE</span>
+    <span class="tag">by AXsUZ-OFC</span>
+  </nav>
+
+  <main class="hero">
+    <h1 class="headline">DROP IT.<br>GET A LINK.</h1>
+    <p class="sub">Upload any file. Get a shareable URL in seconds.</p>
+
+    <div class="dropzone" id="dropzone">
+      <input type="file" id="fileInput" hidden />
+      <div class="dz-content">
+        <span class="dz-icon">↑</span>
+        <p><strong>Click or drag file here</strong></p>
+        <p class="dz-hint">Any file type · up to 100MB</p>
+      </div>
+    </div>
+
+    <div class="result" id="result" hidden>
+      <p class="result-label">Your link is ready:</p>
+      <div class="link-row">
+        <input type="text" id="resultUrl" readonly />
+        <button id="copyBtn">COPY</button>
+      </div>
+    </div>
+
+    <div class="progress" id="progress" hidden>
+      <div class="bar" id="bar"></div>
+    </div>
+  </main>
+
+  <!-- CATEGORIES SECTION -->
+  <section class="categories-section">
+    <div class="categories-header">
+      <h2>EXPLORE.</h2>
+      <p>What are you looking for?</p>
+    </div>
+
+    <div class="category-grid">
+      
+      <!-- Music Card -->
+      <div class="category-card" onclick="window.location.href='music.html'">
+        <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop');"></div>
+        <div class="card-content">
+          <h3>MUSIC</h3>
+          
+          <div class="social-list">
+            <a href="https://pixabay.com/music/" target="_blank" class="social-icon" onclick="event.stopPropagation()">Pixabay</a>
+            <a href="https://soundcloud.com" target="_blank" class="social-icon" onclick="event.stopPropagation()">SoundCloud</a>
+            <a href="https://spotify.com" target="_blank" class="social-icon" onclick="event.stopPropagation()">Spotify</a>
+          </div>
+
+          <span>Explore Audio →</span>
+        </div>
+      </div>
+
+      <!-- Photo Card -->
+      <div class="category-card" onclick="window.location.href='photo.html'">
+        <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1516961642265-531546e84af2?q=80&w=800&auto=format&fit=crop');"></div>
+        <div class="card-content">
+          <h3>PHOTO</h3>
+
+          <div class="social-list">
+            <a href="https://pinterest.com" target="_blank" class="social-icon" onclick="event.stopPropagation()">Pinterest</a>
+            <a href="https://unsplash.com" target="_blank" class="social-icon" onclick="event.stopPropagation()">Unsplash</a>
+            <a href="https://pexels.com" target="_blank" class="social-icon" onclick="event.stopPropagation()">Pexels</a>
+          </div>
+
+          <span>Explore Images →</span>
+        </div>
+      </div>
+
+      <!-- Video Card -->
+      <div class="category-card" onclick="window.location.href='video.html'">
+        <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=800&auto=format&fit=crop');"></div>
+        <div class="card-content">
+          <h3>VIDEO</h3>
+
+          <div class="social-list">
+            <a href="https://youtube.com" target="_blank" class="social-icon" onclick="event.stopPropagation()">YouTube</a>
+            <a href="https://tiktok.com" target="_blank" class="social-icon" onclick="event.stopPropagation()">TikTok</a>
+            <a href="https://facebook.com" target="_blank" class="social-icon" onclick="event.stopPropagation()">Facebook</a>
+          </div>
+
+          <span>Explore Clips →</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>AXsUZ-OFC · Filebase v1</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
